@@ -1,6 +1,6 @@
 
 .header-bg {
-    background-color: #000000;
+    background-color: var(--cor-12);
 }
 
 .header {
@@ -25,6 +25,7 @@
     padding: 16px 0px;
     color: #ffffff;
     font-size: 1.2rem;
+    font-weight: 400;
     position: relative;
 }
 
