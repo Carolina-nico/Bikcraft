@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -16,14 +16,14 @@ img {
 }
 
 a {
-    font-family: 'Poppins';
-    color: inherit;
+    color: var(--cor-0);
 }
 
 h1{
-    font-family: 'Poppins';
+    font: var(--font-1-xxl);
 }
 
 p{
-    font-family: 'Roboto';
+    font: var(--font-2-l);
+
 }
