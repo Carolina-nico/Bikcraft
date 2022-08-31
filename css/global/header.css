@@ -25,6 +25,7 @@
     padding: 16px 0px;
     position: relative;
     font: var(--font-1-m);
+    color: var(--cor-0);
 }
 
 .header-menu a::after {

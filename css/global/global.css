@@ -15,15 +15,25 @@ img {
     display: block;
 }
 
-a {
-    color: var(--cor-0);
+img[src$=".jpg"] {
+    border-radius: 4px;
 }
 
-h1{
+
+/* a {
+    color: var(--cor-0);
+} */
+
+h1,
+h2 {
     font: var(--font-1-xxl);
 }
 
-p{
+h3 {
+    font: var(--font-1-xl);
+}
+
+p {
     font: var(--font-2-l);
 
 }
