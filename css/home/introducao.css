@@ -17,17 +17,6 @@
     margin-right: auto;
 }
 
-/* 
-.introducao p,
-.botao{
-    grid-column: 1;
-}
-
-.introducao img{
-    grid-column: 2;
-    grid-row: 1/3;
-} */
-
 .introducao-conteudo {
     align-self: end;
     padding-bottom: 250px;
