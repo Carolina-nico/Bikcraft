@@ -45,6 +45,7 @@ article {
     align-items: center;
     color: var(--cor-11);
     margin-bottom: 8px;
+    
 }
 
 .bicicletas-lista h3::before {
