@@ -9,6 +9,7 @@
 body {
     font-family: 'Poppins', 'Roboto', Arial, Helvetica, sans-serif;
     width: 100vw;
+    padding-bottom: 80px;
 }
 
 img {
