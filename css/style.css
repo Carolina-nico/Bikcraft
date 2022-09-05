@@ -6,6 +6,7 @@
 
 /* Home  */
 @import url(./home/introducao.css);
+@import url(./home/tecnologia.css);
 
 /* Utilidades */
 @import url(./utilidades/componentes.css);
@@ -13,5 +14,3 @@
 /* Bicicletas */
 @import url(./bicicletas/bicicletas-lista.css);
 
-/* Tecnologia */
-@import url(./tecnologia/tecnologia.css);

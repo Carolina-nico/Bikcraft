@@ -17,16 +17,13 @@
 }
 
 .introducao img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .introducao h1 {
     margin-bottom: 32px;
-}
-
-.introducao h1 span {
-    color: var(--p-1);
 }
 
 .introducao p {

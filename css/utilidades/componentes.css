@@ -22,6 +22,10 @@
     background: linear-gradient(#FFB60d, #e59317);
 }
 
+.ponto-span {
+    font-size: clamp(2.5rem, 5vw, 7rem);
+    color: var(--p-1);
+}
 @media (max-width: 800px) {
 
     .botao {

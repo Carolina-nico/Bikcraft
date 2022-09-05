@@ -1,0 +1,77 @@
+.tecnologia-bg {
+    background-color: var(--cor-11);
+    box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
+}
+
+.tecnologia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.tecnologia-conteudo {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.tecnologia-titulo {
+    font: var(--font-2-l-b);
+    color: var(--cor-5);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.link {
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+    color: var(--p-1);
+    font: var(--font-1-m-b);
+
+}
+
+.link::after {
+    content: "";
+    display: block;
+    position:absolute;
+    height: 4px;
+    width: 100%;
+    background-color: var(--p-1);
+    margin-top: 2px;
+}
+
+.link:hover:after {
+    width: 12.5%;
+}
+
+.tecnologia-info {
+    margin-top: 80px;
+}
+
+.tecnologia-conteudo h2 {
+    font: var(--font-1-xxl);
+    color: var(--cor-0);
+    margin-bottom: 32px;
+}
+
+.tecnologia-conteudo p {
+    font: var(--font-2-l);
+    color: var(--cor-5);
+}
+
+.tecnologia h3 {
+    font: var(--font-1-m);
+    color: var(--cor-0);
+}
+
+.tecnologia p {
+    font: var(--font-2-s);
+    color: var(--cor-5);
+}
+
+.tecnologia-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}

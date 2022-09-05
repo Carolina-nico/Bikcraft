@@ -16,10 +16,6 @@ article {
     box-sizing: border-box;
 }
 
-.bicicletas-lista h2 span {
-    color: var(--p-1);
-}
-
 .bicicletas-lista ul {
     display: flex;
     gap: 40px;
@@ -84,10 +80,6 @@ article {
         font-size: 48px;
         margin: auto auto 35px;
     }
-
-    .bicicletas-lista h2>span {
-        font-size: 48px;
-    }
 }
 
     @media (max-width: 800px) {
@@ -101,9 +93,4 @@ article {
             margin: 30px auto 20px; 
             /* height: 50px; */
         }
-
-        .bicicletas-lista h2>span {
-            font-size: 32px;
-        }
-
     }
