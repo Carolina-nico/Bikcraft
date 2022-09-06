@@ -9,7 +9,7 @@
     gap: 40px;
 }
 
-.tecnologia-conteudo {
+.tecnologia-todo {
     padding-top: 160px;
     padding-bottom: 160px;
 }
@@ -24,28 +24,23 @@
 .link {
     display: inline-block;
     position: relative;
-    padding-top: 20px;
     color: var(--p-1);
     font: var(--font-1-m-b);
-
+    /* padding-top: 20px; */
 }
 
 .link::after {
     content: "";
     display: block;
-    position:absolute;
+    position: absolute;
     height: 4px;
     width: 100%;
     background-color: var(--p-1);
     margin-top: 2px;
 }
 
-.link:hover:after {
-    width: 12.5%;
-}
-
-.tecnologia-info {
-    margin-top: 80px;
+.tecnologia-conteudo>a {
+    margin-bottom: 80px;
 }
 
 .tecnologia-conteudo h2 {
@@ -54,14 +49,10 @@
     margin-bottom: 32px;
 }
 
-.tecnologia-conteudo p {
+.tecnologia-conteudo>p {
     font: var(--font-2-l);
     color: var(--cor-5);
-}
-
-.tecnologia h3 {
-    font: var(--font-1-m);
-    color: var(--cor-0);
+    margin-bottom: 20px;
 }
 
 .tecnologia p {
@@ -74,4 +65,93 @@
     height: 100%;
     object-fit: cover;
     object-position: left;
+}
+
+.tecnologia-vantagens {
+    display: flex;
+    gap: 40px;
+}
+
+.tecnologia-vantagens h3 {
+    font: var(--font-1-m);
+    color: var(--cor-0);
+    width: max-content;
+    padding: 8px 0px 8px 0px;
+}
+
+.tecnologia-vantagens img {
+    width: 24px;
+}
+
+@media (max-width: 1100px) {
+
+    .tecnologia-bg {
+        box-shadow: initial;
+    }
+
+    .tecnologia-todo {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .tecnologia-conteudo h2 {
+        font-size: 48px;
+        margin-top: 0px;
+        margin-bottom: 16px;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .tecnologia {
+        grid-template-columns: 1fr;
+    }
+
+    .tecnologia-img {
+        display: none;
+    }
+
+    .tecnologia-titulo {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .tecnologia-conteudo h2 {
+        font-size: 32px;
+        line-height: 1.5;
+    }
+
+    .tecnologia-conteudo>a {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 540px) {
+    .tecnologia-todo {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .tecnologia-titulo {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .tecnologia-conteudo h2 {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .tecnologia-conteudo h2>span {
+        line-height: 0.1;
+    }
+
+    .tecnologia-conteudo>a {
+        margin-bottom: 40px;
+    }
+
+    .tecnologia-vantagens {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
