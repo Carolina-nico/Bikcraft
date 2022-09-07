@@ -23,7 +23,6 @@
 
 .link {
     display: inline-block;
-    position: relative;
     color: var(--p-1);
     font: var(--font-1-m-b);
     /* padding-top: 20px; */
@@ -32,11 +31,15 @@
 .link::after {
     content: "";
     display: block;
-    position: absolute;
     height: 4px;
     width: 100%;
-    background-color: var(--p-1);
+    background-color: currentColor;
+    /* Faz o background herdar a color do pai */
     margin-top: 2px;
+}
+
+.link:hover {
+    color: var(--cor-0);
 }
 
 .tecnologia-conteudo>a {
@@ -114,7 +117,7 @@
     .tecnologia-titulo {
         font-size: 18px;
         margin-bottom: 10px;
-    }
+    } 
 
     .tecnologia-conteudo h2 {
         font-size: 32px;
