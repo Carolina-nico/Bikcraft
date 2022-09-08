@@ -60,6 +60,7 @@
 
     .parceiros h2 {
         margin-bottom: 20px;
+        font-size: 48px;
     }
 
     .parceiros ul {
@@ -76,5 +77,14 @@
 
     .parceiros li:nth-child(odd) {
         border-left: none;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .parceiros h2 {
+        font-size: 32px;
+        margin: 30px auto 20px;
+        /* height: 50px; */
     }
 }
