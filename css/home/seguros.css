@@ -59,6 +59,11 @@
     padding-top: 20px;
 }
 
+.seguros-item li::before {
+    content: url(/img/icones/lista.svg);
+    padding-right: 8px;
+}
+
 .seguros-item a {
     margin-top: 32px;
 }
