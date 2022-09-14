@@ -22,6 +22,15 @@
     background: linear-gradient(#FFB60d, #e59317);
 }
 
+.botao.secundario {
+    background: var(--cor-10);
+    color: var(--cor-4);
+}
+
+.botao.secundario:hover {
+    background: var(--cor-9);
+}
+
 .ponto-span {
     font-size: clamp(2.5rem, 5vw, 7rem);
     color: var(--p-1);

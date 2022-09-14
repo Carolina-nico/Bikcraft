@@ -21,3 +21,7 @@
 
     --font-1-xxl: 600 4rem/1.125 "Poppins", sans-serif;
 }
+
+.font-1-xl {
+    font: 500 2rem/1.25 "Roboto", sans-serif;    
+}
