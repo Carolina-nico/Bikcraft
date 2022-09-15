@@ -1,5 +1,6 @@
 .seguros-bg {
     background: var(--cor-11);
+    margin-top: 0px;
 }
 
 .seguros {
@@ -34,12 +35,15 @@
 
 .seguros-item .h3 {
     color: var(--p-1);
+    margin-bottom: 40px;
 }
 
 .seguros-item span {
     font: var(--font-1-xl);
     color: var(--cor-0);
     grid-column: 2;
+    display: block;
+    text-align: end;
 }
 
 .seguros-item span span {
@@ -54,9 +58,12 @@
     grid-column: 1/-1;
 }
 
-
 .seguros-item li {
     padding-top: 20px;
+}
+
+.seguros-item li:first-child {
+    padding-top: 0px;
 }
 
 .seguros-item li::before {
@@ -65,5 +72,44 @@
 }
 
 .seguros-item a {
+    grid-column: 1/-1;
     margin-top: 32px;
+}
+
+@media (max-width: 1100px) {
+
+    .seguros {
+        grid-template-columns: 1fr;
+    }
+
+    .seguros h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .seguros h2 {
+        font-size: 32px;
+    }
+
+    .seguros.container {
+        padding: 40px 20px;
+    }
+
+    .seguros-item h3 {
+        font-size: 25px;
+    }
+
+    .seguros-item span {
+        font-size: 25px;
+    }
+
+    .seguros-item span span {
+        font-size: 10px;
+    }
+
+    .seguros-item {
+        padding: 32px 32px 32px 32px;
+    }
 }
