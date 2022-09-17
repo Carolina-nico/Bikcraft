@@ -1,0 +1,17 @@
+.footer-bg {
+    background: var(--cor-12);
+}
+
+.footer {
+    padding-top: 60px;
+}
+
+.footer h3{
+    font: var(--font-2-l-b);
+    color: var(--cor-0);
+}
+
+.footer li, a{
+    font: var(--font-2-m);
+    color: var(--cor-5);
+}
