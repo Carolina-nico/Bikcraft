@@ -10,18 +10,19 @@
     gap: 40px;
 }
 
-.footer h3{
+.footer h3 {
     font: var(--font-2-l-b);
     color: var(--cor-0);
     margin-bottom: 32px;
 }
 
-.footer-contato li, a{
+.footer-contato li,
+a {
     font: var(--font-2-m);
     color: var(--cor-5);
 }
 
-.footer-contato ul{
+.footer-contato ul {
     margin-bottom: 32px;
 }
 
@@ -57,4 +58,28 @@
     color: var(--cor-6);
     grid-column: 1/-1;
     margin-top: 40px;
+}
+
+
+@media(max-width: 800px) {
+
+    .footer>img {
+        display: none;
+    }
+
+    .footer {
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .footer {
+        grid-template-columns: 2fr;
+        gap: 60px;
+    }
+
+    .footer-copy {
+        margin-top: 0px;
+    }
 }
