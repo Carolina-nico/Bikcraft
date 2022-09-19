@@ -9,7 +9,7 @@
     gap: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
-    align-items: center;
+    align-items: center; 
 }
 
 .seguros h2 {
@@ -67,7 +67,7 @@
 }
 
 .seguros-item li::before {
-    content: url(/img/icones/lista.svg);
+    content: url(../../img/icones/lista.svg);
     padding-right: 8px;
 }
 
