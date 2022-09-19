@@ -1,0 +1,16 @@
+.termos {
+    padding-top: 120px;
+}
+
+.termos h2 {
+    font: var(--font-1-l);
+    font-weight: 600;
+    color: var(--cor-11);
+    padding-bottom: 20px;
+}
+
+.termos p {
+    font: var(--font-2-s);
+    color: var(--cor-10);
+    padding-bottom: 48px;
+}

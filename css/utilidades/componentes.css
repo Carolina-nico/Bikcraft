@@ -32,15 +32,52 @@
     background: var(--cor-9);
 }
 
-.ponto-span {
-    font-size: clamp(2.5rem, 5vw, 7rem);
-    color: var(--p-1);
-}
 @media (max-width: 800px) {
 
     .botao {
         font-size: 15px;
         padding: 12px 22px;
         margin-bottom: 16px;
+    }
+}
+
+.ponto-span {
+    /* font-size: clamp(2.5rem, 5vw, 6rem); */
+    font-size: var(--font-1-xxl);
+    color: var(--p-1);
+}
+
+/* TITULO INTERNAS */
+
+.titulo-bg {
+    background: var(--cor-11);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.titulo p {
+    font: var(--font-2-l-b);
+    color: var(--cor-5);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.titulo h1 {
+    font: var(--font-1-xxl);
+    color: var(--cor-0);
+}
+
+@media (max-width: 800px) {
+
+    .titulo-bg {
+        font-size: 15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .titulo p {
+        font-size: 1.2rem;
+        text-transform:lowercase;
+        font-weight: 400;
     }
 }
