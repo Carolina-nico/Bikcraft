@@ -1,33 +1,66 @@
-.termos {
-    padding-top: 100px;
+.titulo-bg {
+    margin-bottom: 60px;
 }
 
-.termos h2 {
-    font: var(--font-1-l);
-    font-weight: 600;
-    color: var(--cor-11);
-    margin-bottom: 20px;
+.footer-bg {
+    margin-top: 60px;
 }
 
-.termos li {
-    font: var(--font-2-s);
-    color: var(--cor-10);
-    margin-bottom: 30px;
+.bicicletas {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.bicicletas-imagem {
+    position: relative;
 }
 
-.termo-lista {
-    margin-bottom: 48px;
+.bicicletas-imagem span {
+    display: inline-block;
+    background: var(--cor-12);
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    border-radius: 5px 0px 0px 5px;
+    padding: 8px 16px 8px 8px;
 }
 
-@media (max-width: 700px) {
+.bicicletas span {
+    color: var(--cor-0);
+    font: var(--font-2-m);
+}
 
-    .titulo h1 {
-        font-size: 32px; 
-    }
+.bicicletas-conteudo h2 {
+    font: var(--font-1-xl);
+}
 
-    .termos {
-        padding-top: 50px;
-    }
+.bicicletas-conteudo p {
+    font: var(--font-2-s);
+}
+
+.bicicletas-conteudo ul {
+    font: var(--font-1-m);
+    color: var(--cor-8);
+}
+
+/* MAGIC MIGHT */
+.bicicletas-bg {
+    background: var(--cor-11);
+}
+
+.bicicletas-conteudo-magic h2 {
+    font: var(--font-1-xl);
+    color: var(--cor-0);
+}
+
+.bicicletas-conteudo-magic p {
+    font: var(--font-2-s);
+    color: var(--cor-5);
+}
+
+.bicicletas-conteudo-magic ul {
+    font: var(--font-1-m);
+    color: var(--cor-5);
 }
