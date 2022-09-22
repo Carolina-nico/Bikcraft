@@ -11,8 +11,19 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 60px;   
+     position: relative;
 }
+
+.bicicletas a {
+    position: absolute;
+    height: fit-content;
+    padding: 16px 20px;
+    color: var(--p-5);
+    right: 20px;
+    bottom: 60px;
+}
+
 .bicicletas-imagem {
     position: relative;
 }
@@ -23,7 +34,7 @@
     position: absolute;
     top: 20px;
     right: 0px;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 0 0 5px;
     padding: 8px 16px 8px 8px;
 }
 
@@ -64,3 +75,44 @@
     font: var(--font-1-m);
     color: var(--cor-5);
 }
+
+/* ^ */
+
+.bicicletas-conteudo,
+.bicicletas-conteudo-magic {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.bicicletas h2,
+p {
+    grid-column: 1/-1;
+}
+
+.bicicletas h2::before {
+    content: "";
+    display: block;
+    background-color: var(--p-1);
+    height: 8px;
+    width: 12px;
+    margin-bottom: 8px;
+}
+
+.bicicletas-conteudo li>img,
+.bicicletas-conteudo-magic li>img {
+    height: 24px;
+    width: 24px;
+}
+
+.bicicletas-conteudo li,
+.bicicletas-conteudo-magic li {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.bicicletas-conteudo li:last-child,
+.bicicletas-conteudo-magic li:last-child {
+    margin-bottom: 0px;
+}
+
