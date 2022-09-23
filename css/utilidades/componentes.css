@@ -32,12 +32,34 @@
     background: var(--cor-9);
 }
 
+.botao.seta::after {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 18px;
+    margin-left: 12px; 
+    background: url("../../img/icones/seta.svg");
+    transition: 0.2s;
+}
+
+.botao.seta:hover::after {
+    transform: translateX(4px);
+}
+
+.botao.seta {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
 @media (max-width: 800px) {
 
     .botao {
         font-size: 15px;
         padding: 12px 22px;
-        margin-bottom: 16px;
+        /* margin-bottom: 16px; */
     }
 }
 
