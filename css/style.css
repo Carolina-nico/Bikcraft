@@ -23,5 +23,8 @@
 @import url(./termos/termos.css);
 
 /* Seguros */
-@import url(./seguros/seguros.css);
+@import url(./home/seguros.css);
+
+/* Vantagens */
+@import url(./vantagens/vantagens.css);
 
