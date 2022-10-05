@@ -13,7 +13,8 @@
 }
 
 #seguros .seguros {
-    padding-top: 0px;
+    /* padding-top: 60px; */
+    padding-bottom: 120px;
 }
 
 .seguros h2 {

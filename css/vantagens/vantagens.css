@@ -1,0 +1,38 @@
+.vantagens-bg {
+    background: var(--cor-12);
+}
+
+article {
+    margin-top: 0px;
+}
+
+.vantagens {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.nossas-vantagens {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    padding-top: 90px;
+    gap: 40px;
+}
+
+.nossas-vantagens p {
+    font: var(--font-2-s);
+    color: var(--cor-5);
+}
+
+.vantagens h2, h3 {
+    color: var(--cor-0);
+}
+
+.vantagens h3 {
+    font: var(--font-1-m-b);
+    padding: 8px 0px 8px 0px;
+    
+}
+
+.vantagens p {
+    color: var(--cor-6);
+}
