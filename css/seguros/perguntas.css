@@ -1,0 +1,67 @@
+.perguntas {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.details {
+    padding-top: 88px;
+}
+
+details {
+    padding: 20px;
+}
+
+details summary {
+    font: var(--font-1-m-b);
+    color: var(--cor-11);
+}
+
+details p {
+    font: var(--font-2-s);
+    color: var(--cor-9);
+    padding-top: 16px;
+    padding-left: 20px;
+    max-width: 90ch;
+}
+
+:is(.details details, .details p):nth-child(odd) {
+    background: var(--cor-1);
+}
+
+summary{
+    display: grid;
+    list-style: none;
+    grid-template-columns: auto 1fr auto;
+    position: relative;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-left: 20px;
+    /* margin-left: 20px; */
+}
+
+summary::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background-color: var(--p-1);
+    left: -20px;
+    width: 12px;
+    height: 8px;
+}
+
+summary::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background-image: url(../../img/icones/seta-abrir.svg);
+    left: 1080px;
+    width: 14px;
+    height: 6px;
+    transition: .3s;
+}
+
+summary:hover::after {
+    transform: rotate(180deg);
+    
+}

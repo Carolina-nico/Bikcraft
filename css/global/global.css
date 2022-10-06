@@ -1,9 +1,12 @@
-* {
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
+}
+
+:not(summary){
+    list-style: none;
 }
 
 body {
