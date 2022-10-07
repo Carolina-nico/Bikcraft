@@ -1,5 +1,6 @@
 .vantagens-bg {
     background: var(--cor-12);
+    max-width: 100%;
 }
 
 article {
@@ -13,7 +14,7 @@ article {
 
 .nossas-vantagens {
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
     padding-top: 90px;
     gap: 40px;
 }
@@ -35,4 +36,40 @@ article {
 
 .vantagens p {
     color: var(--cor-6);
+}
+
+@media (max-width: 1100px) {
+
+    .vantagens {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .vantagens h2,
+    .nossas-vantagens {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 800px){
+
+.nossas-vantagens {
+    padding-top: 40px;
+}
+
+.vantagens h2 {
+    font: var(--font-1-xxl);
+}
+
+}
+
+@media (max-width: 600px){
+
+    .vantagens h2 {
+        font-size: 32px;
+    }
+
+    .vantagens {
+        padding: 60px 0px;
+    }
 }
