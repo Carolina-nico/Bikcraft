@@ -4,7 +4,6 @@
 
 .descricao {
     display: grid;
-    padding-top: 60px;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
@@ -15,7 +14,7 @@
     flex-wrap: wrap;
     height: fit-content;
     width: 100%;
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
 }
 
 .descricao-nimbus img {
@@ -30,7 +29,7 @@
 /* DESCRICAO_2 */
 
 .descricao-2 h2 {
-    font: var(--font-2-s);
+    font: var(--font-2-x);
     color: var(--cor-5);
 }
 
@@ -40,7 +39,7 @@
     height: fit-content;
     gap: 32px 8px;
 
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
 }
 
 .descricao-2 span {
@@ -60,13 +59,33 @@
 
 /* VANTAGENS */
 
-
-.vantagens-1 {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    /* grid-template-columns: repeat(auto-fit, minmax(100px, max-content)); */
+.vantagens-1 h2 {
+    padding-top: 40px;
+    padding-bottom: 12px;
 }
 
 .vantagens-nimbus {
+    /* border: 1px blue solid; */
+
     display: flex;
+    gap: 32px;
+    background-color: var(--cor-12);
+    border-radius: 4px;
+    padding: 32px 32px 0px 32px;
+}
+
+.vantagens-nimbus div > p {
+    padding-bottom: 32px;
+    
+}
+
+.vantagens-1 h2, 
+.vantagens-nimbus h3 {
+    color: var(--cor-0);
+    font: var(--font-1-m-b);
+}
+
+.vantagens-nimbus p {
+    color: var(--cor-5);
+    font: var(--font-2-xs);
 }
