@@ -1,3 +1,7 @@
+article >section {
+    padding-bottom: 60px;
+}
+
 .descricao-bg {
     background: var(--cor-11);
 }
@@ -59,7 +63,8 @@
 
 /* VANTAGENS */
 
-.vantagens-1 h2 {
+.vantagens-1 h2,
+.ficha h2 {
     padding-top: 40px;
     padding-bottom: 12px;
 }
@@ -74,13 +79,14 @@
     padding: 32px 32px 0px 32px;
 }
 
-.vantagens-nimbus div > p {
+.vantagens-nimbus div>p {
     padding-bottom: 32px;
-    
+
 }
 
-.vantagens-1 h2, 
-.vantagens-nimbus h3 {
+.vantagens-1 h2,
+.vantagens-nimbus h3,
+.ficha h2 {
     color: var(--cor-0);
     font: var(--font-1-m-b);
 }
@@ -88,4 +94,30 @@
 .vantagens-nimbus p {
     color: var(--cor-5);
     font: var(--font-2-xs);
+}
+
+/* FICHA TECNICA */
+
+.ficha-nimbus {
+    display: flex;
+    flex-direction: column;
+    /* gap: 12px; */
+    background-color: var(--cor-12);
+    border-radius: 4px;
+    padding: 32px;
+}
+
+.ficha-nimbus p {
+    color: var(--cor-4);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px 5px;
+}
+
+.ficha-nimbus p+p {
+    border-top: 1px solid var(--cor-11);
+}
+
+.ficha-nimbus span {
+    color: var(--cor-6);
 }
