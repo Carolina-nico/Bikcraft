@@ -4,6 +4,7 @@ article >section {
 
 .descricao-bg {
     background: var(--cor-11);
+    padding-bottom: 60px;
 }
 
 .descricao {
@@ -120,4 +121,85 @@ article >section {
 
 .ficha-nimbus span {
     color: var(--cor-6);
+}
+
+/* DESTAQUES */
+
+.destaque-bg {
+    padding-top: 82px;
+    padding-bottom: 130px;
+}
+
+.destaque-bg h2 {
+    padding-bottom: 40px;
+}
+
+.destaque-bike h3 {
+    font: var(--font-1-xl);
+    color: var(--cor-11);
+    padding: 12px 0px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.destaque-bike h3::before {
+    content: '';
+    display: inline-block;
+    background-color: var(--p-1);
+    width: 12px;
+    height: 8px;
+    margin-right: 8px;
+    /* margin-top: 32; */
+}
+
+.destaque-bike strong {
+    font: var(--font-1-m);
+    color: var(--cor-8);
+    padding-left: 20px;
+}
+
+.destaque-bike {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.destaque-bike img {
+    border-radius: 4px;
+}
+
+/* VEJA MAIS SEGUROS */
+
+.maisSeguros-bg {
+    background: var(--cor-11);
+    box-shadow: inset 0 120px var(--cor-0);
+    height: 600px;
+    /* box-shadow: inset 0 -120px var(--cor-12); */
+}
+
+.botao {
+    margin-bottom: 60px;
+}
+
+.mais-seguros h2 {
+    font: var(--font-1-xxl);
+    color: var(--cor-0);
+    padding-top: 180px;
+    padding-bottom: 32px;
+}
+
+.mais-seguros p {
+    font: var(--font-2-x);
+    color: var(--cor-5);
+    padding-bottom: 20px;
+}
+
+.mais-seguros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-bg {
+    /* margin-top: 0px; */
 }
