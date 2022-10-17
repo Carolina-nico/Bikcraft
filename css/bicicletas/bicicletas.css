@@ -1,5 +1,6 @@
-.footer-bg {
+.bicicletas-bg {
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .bicicletas {
@@ -58,7 +59,7 @@
 }
 
 /* MAGIC MIGHT */
-.bicicletas-bg {
+.bicicletas-bg-2 {
     background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
 }
 
@@ -129,7 +130,7 @@ p {
         gap: 20px;
     }
 
-    .bicicletas-bg {
+    .bicicletas-bg-2 {
         background: var(--cor-11);
     }
 

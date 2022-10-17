@@ -6,7 +6,7 @@ article {
 }
 
 .bicicletas-lista h2 {
-    /* padding-top: 120px; */
+    padding-top: 120px;
     /* padding-bottom: 40px; */
     padding-left: 20px;
     padding-right: 20px;
@@ -25,6 +25,7 @@ article {
     margin-right: auto;
     /* scroll lateral */
     overflow-x: auto;
+    padding-bottom: 120px;
 }
 
 .bicicletas-lista li {
