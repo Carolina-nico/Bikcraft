@@ -4,53 +4,65 @@ article >section {
 
 .bicicleta-bg {
     background: var(--cor-11);
-    padding-bottom: 60px;
 }
 
 .bicicleta {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    align-items: start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#bicicleta .titulo p {
+    text-transform: uppercase;
 }
 
 .bicicleta-img {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    height: fit-content;
-    width: 100%;
+
     /* border: 1px blue solid; */
 }
 
 .bicicleta-img img {
-    width: 48%;
-    object-fit: contain;
+    flex: 1;
+    width: 200px;
+    /* object-fit: contain; */
 }
 
 .bicicleta-img img:first-child {
     width: 100%;
 }
 
-/* BICICLETA CONTEUDO */
+/* BICICLETA COMPRAR */
 
 .bicicleta-conteudo p {
     font: var(--font-2-l);
     color: var(--cor-5);
+    margin-bottom: 32px;
 }
 
-.bicicleta-conteudo {
-    display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
-    gap: 32px 8px;
+.bicicleta-comprar {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    justify-items: start;
+    gap: 8px 12px;
 
     /* border: 1px blue solid; */
 }
 
-.bicicleta-conteudo span {
+.bicicleta-comprar a {
+    grid-row: span 2;
+}
+
+.bicicleta-comprar span {
     display: flex;
     gap: 8px;
-    width: fit-content;
+    align-items: center;
     padding: 4px 8px;
     border-radius: 4px;
     background: var(--cor-12);
@@ -58,32 +70,41 @@ article >section {
     color: var(--cor-6);
 }
 
-.bicicleta-conteudo span+span {
-    margin-top: 8px;
-}
-
 .bicicleta-conteudo h2 {
     font: var(--font-1-xs);
     color: var(--cor-0);
-    /* padding-top: 40px; */
-    /* padding-bottom: 12px; */
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    margin-top: 40px;
+    margin-bottom: 12px;
 }
 
 /* INFORMACOES */
 
-.bicicleta-informacao {
+.bicicleta-informacao,
+.bicicleta-ficha {
     /* border: 1px blue solid; */
 
-    display: flex;
-    gap: 32px;
     background-color: var(--cor-12);
     border-radius: 4px;
     padding: 32px
 }
 
+.bicicleta-informacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.bicicleta-informacao img {
+    width: 24px;
+    margin-bottom: 8px;
+}
+
 .bicicleta-informacao h3 {
     color: var(--cor-0);
     font: var(--font-1-m);
+    margin-bottom: 8px;
 }
 
 .bicicleta-informacao p {
@@ -93,29 +114,46 @@ article >section {
 
 /* FICHA TECNICA */
 
-.bicicleta-ficha {
-    display: flex;
-    flex-direction: column;
-    /* gap: 12px; */
-    background-color: var(--cor-12);
-    border-radius: 4px;
-    padding: 32px;
-}
-
 .bicicleta-ficha li {
     display: flex;
+    padding: 4px 0px;
     justify-content: space-between;
     color: var(--cor-4);
     font: var(--font-2-s);
-    padding: 5px 0px 5px;
+    border-bottom: 1px solid var(--cor-11);
 }
 
-.bicicleta-ficha li+li {
-    border-top: 1px solid var(--cor-11);
+.bicicleta-ficha li:last-child {
+    border-bottom: none;
 }
 
 .bicicleta-ficha span {
     color: var(--cor-6);
+}
+
+@media (max-width: 1000px) {
+    
+    .bicicleta {
+        grid-template-columns: 1fr;
+        padding: 40px 0px 40px;
+        margin: 0px 20px;
+    }
+
+    .bicicleta-img {
+        grid-row: 2;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .bicicleta-informacao,
+    .bicicleta-comprar {
+        grid-template-columns: 1fr;
+    }
+
+    .bicicleta-informacao p {
+        margin-bottom: 0px;
+    }
 }
 
 /* DESTAQUES */
@@ -163,30 +201,16 @@ article >section {
     border-radius: 4px;
 }
 
-/* VEJA MAIS SEGUROS */
+@media (max-width: 1000px) {
 
-.maisSeguros-bg {
-    background: var(--cor-11);
-    box-shadow: inset 0 120px var(--cor-0);
-    height: 600px;
-    box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
+    .destaque-bg {
+        padding-top: 40px;
+    }
 }
 
-.mais-seguros h2 {
-    font: var(--font-1-xxl);
-    color: var(--cor-0);
-    padding-top: 180px;
-    padding-bottom: 32px;
-}
+@media (max-width: 700px) {
 
-.mais-seguros p {
-    font: var(--font-2-x);
-    color: var(--cor-5);
-    padding-bottom: 20px;
-}
-
-.mais-seguros {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    .destaque-bg h2 {
+        font-size: 32px;
+    }
 }
