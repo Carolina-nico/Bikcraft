@@ -18,14 +18,14 @@ article {
 
 @media (max-width: 1000px) {
     #bicicleta .bicicletas-lista h2 {
-        margin-top:  0px;
+        margin-top: 0px;
         padding-top: 40px;
     }
 }
 
 @media (max-width: 800px) {
     #bicicleta .bicicletas-lista h2 {
-        padding-top: 20px;
+        padding-top: 60px;
     }
 }
 
@@ -39,6 +39,12 @@ article {
     /* scroll lateral */
     overflow-x: auto;
     padding-bottom: 120px;
+}
+
+@media (max-width: 800px) {
+    #bicicleta .bicicletas-lista ul {
+        padding-bottom: 60px;
+    }
 }
 
 .bicicletas-lista li {

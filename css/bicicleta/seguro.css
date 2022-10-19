@@ -52,3 +52,10 @@
 
     }
 }
+
+@media (max-width: 700px) {
+
+    .seguro-conteudo h2 {
+        font-size: 32px;
+    }
+}
