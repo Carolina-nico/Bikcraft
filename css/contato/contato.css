@@ -1,0 +1,9 @@
+.contato h2 {
+    font: var(--font-1-m);
+    color: var(--cor-0);
+}
+
+.contato-endereco {
+    font: var(--font-2-s);
+    color: var(--cor-4);
+}
