@@ -58,4 +58,8 @@
     .seguro-conteudo h2 {
         font-size: 32px;
     }
+
+    .seguro-img img {
+        height: 200px;
+    }
 }
