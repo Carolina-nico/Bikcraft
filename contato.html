@@ -42,16 +42,50 @@
                 <p>respostas em até 24h</p>
                 <h1>nosso contato<span class="ponto-span">.</span></h1>
             </div>
-        </div>
+        </div> 
 
         <div class="contato container">
-            <section aria-label="Endereço">
+            <section class="contato-dados" aria-label="Endereço">
                 <h2>Loja Online</h2>
                 <div class="contato-endereco">
                     <p>Rua Ali na Esquina, 42 - SBC</p>
                     <p>São Paulo - SP</p>
                     <p>Brasil - Terra - Vita Láctea</p>
                 </div>
+
+                <!-- Address: define informações de contato do proprietario tanto email como telefone e endereço.-->
+                <address class="contato-meios">
+                    <a href="maito:contato@bikcraft.com">contato@bikcraft.com</a>
+                    <a href="maito:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+                    <a href="tel:+5511999999999">+55 11 99999-9999</a>
+                </address>
+                <div class="contato-redes">
+                    <a href="./"><img src="./img/redes/instagram-p.svg" alt="Instagram"></a>
+                    <a href="./"><img src="./img/redes/facebook-p.svg" alt="Facebook"></a>
+                    <a href="./"><img src="./img/redes/youtube-p.svg" alt="YouTube"></a>
+                </div>
+            </section>
+
+            <section class="contato-formulario" aria-label="Formulário">
+                <form action="./contato.html">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="(21) 99999-9999">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="contato@bikcraft.com">
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea rows="5" name="mensagem" id="mensagem" placeholder="O que você precisa ?"></textarea>
+                    </div>
+                    <button class="botao">enviar mensagem</button>
+                </form>
             </section>
         </div>
 

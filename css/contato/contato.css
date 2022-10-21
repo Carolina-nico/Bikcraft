@@ -1,9 +1,39 @@
-.contato h2 {
+#contato {
+    background: var(--cor-1);
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    /* padding-top: 20px; */
+}
+
+.contato-dados,
+.contato-formulario {
+    padding: 60px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 200px;
+}
+
+.contato-dados {
+    background: var(--cor-12);
+}
+
+.contato-formulraio {
+    background: var(--cor-0);
+}
+
+.contato-dados h2 {
     font: var(--font-1-m);
     color: var(--cor-0);
 }
 
 .contato-endereco {
+    font: var(--font-2-s);
+    color: var(--cor-4);
+}
+
+.contato-meios a {
     font: var(--font-2-s);
     color: var(--cor-4);
 }
