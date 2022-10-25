@@ -1,39 +1,106 @@
 #contato {
-    background: var(--cor-1);
+    background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
 }
 
 .contato {
     display: grid;
     grid-template-columns: 5fr 7fr;
-    /* padding-top: 20px; */
+    margin-bottom: 200px;
 }
 
 .contato-dados,
 .contato-formulario {
     padding: 60px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    margin-bottom: 200px;
+}
+
+.contato-formulario {
+    border-radius: 0 5px 5px 0;
+    background: var(--cor-0);
 }
 
 .contato-dados {
     background: var(--cor-12);
-}
-
-.contato-formulraio {
-    background: var(--cor-0);
+    border-radius: 5px 0 0 5px;
 }
 
 .contato-dados h2 {
     font: var(--font-1-m);
     color: var(--cor-0);
+    margin-bottom: 60px;
 }
 
 .contato-endereco {
     font: var(--font-2-s);
     color: var(--cor-4);
+    margin-bottom: 32px;
+    background: url(../../img/icones/local.svg) no-repeat 0px 4px;
+    padding-left: 28px;
+}
+
+.contato-endereco p {
+    margin-bottom: 8px;
 }
 
 .contato-meios a {
     font: var(--font-2-s);
     color: var(--cor-4);
+    display: block;
+    max-width: max-content;
+    margin-bottom: 8px;
+    padding-left: 28px;
+}
+
+.contato-meios a:hover {
+    color: var(--cor-0);
+}
+
+.contato-meios a:first-child {
+    background: url(../../img/icones/email.svg) no-repeat 0px 2px;
+}
+
+.contato-meios a:nth-child(3) {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding-left: 28px;
+    background: url(../../img/icones/telefone.svg) no-repeat 0px 0px;
+}
+
+.contato-redes {
+    display: flex;
+    gap: 32px;
+    padding-left: 28px;
+}
+
+@media(max-width: 800px) {
+
+    #contato {
+        background: linear-gradient(var(--cor-11) 500px, var(--cor-1) 0px);
+    }
+
+    .contato {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-dados,
+    .contato-formulario {
+        padding: 20px;
+    }
+
+    .contato-dados {
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .contato-formulario {
+        border-radius: 0 0 5px 5px;
+    }
+
+    .contato-dados h2,
+    .contato-meios a:nth-child(3) {
+        margin-bottom: 32px;
+    }
+
+    .contato-redes {
+        margin-bottom: 12px;
+    }  
 }
