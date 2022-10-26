@@ -42,7 +42,7 @@
                 <p>respostas em até 24h</p>
                 <h1>nosso contato<span class="ponto-span">.</span></h1>
             </div>
-        </div> 
+        </div>
 
         <div class="contato container">
             <section class="contato-dados" aria-label="Endereço">
@@ -67,7 +67,7 @@
             </section>
 
             <section class="contato-formulario" aria-label="Formulário">
-                <form action="./contato.html">
+                <form class="form" action="./contato.html">
                     <div>
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome" placeholder="Seu nome">
@@ -76,20 +76,58 @@
                         <label for="telefone">Telefone</label>
                         <input type="text" name="telefone" id="telefone" placeholder="(21) 99999-9999">
                     </div>
-                    <div>
+                    <div class="col-2">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="contato@bikcraft.com">
                     </div>
-                    <div>
+                    <div class="col-2">
                         <label for="mensagem">Mensagem</label>
                         <textarea rows="5" name="mensagem" id="mensagem" placeholder="O que você precisa ?"></textarea>
                     </div>
-                    <button class="botao">enviar mensagem</button>
+                    <button class="botao col-2">enviar mensagem</button>
                 </form>
             </section>
         </div>
-
     </main>
+
+    <article class="lojas container">
+        <h2>lojas locais <span class="ponto-span">.</span></h2>
+
+        <div>
+            <div class="lojas-item">
+                <img src="./img/lojas/rj.jpg"
+                    alt="mapa marcando o endereço em Rua Ali na Esquina, 42 - Rio de Janeiro - RJ">
+                <div class="lojas-conteudo">
+                    <h3>Rio de Janeiro</h3>
+                    <div class="lojas-dados">
+                        <p>Rua Ali na Esquina, 42</p>
+                        <p>Rio de Janeiro - RJ</p>
+                    </div>
+                    <div class="lojas-dados">
+                        <a href="maito:rj@bikcraft.com">rj@bikcraft.com</a>
+                        <a href="tel:+5521999999999">+55 21 99999-9999</a>
+                    </div>
+                    <p class="lojas-tempo"><img src="./img/icones/horario.svg">08-18h de seg à dom</p>
+                </div>
+            </div>
+
+            <div class="lojas-item">
+                <img src="./img/lojas/sp.jpg" alt="mapa marcando o endereço em Rua Ali na Esquina, 25 - São Paulo - SP">
+                <div class="lojas-conteudo">
+                    <h3>São Paulo</h3>
+                    <div class="lojas-dados">
+                        <p>Rua Ali na Esquina, 25</p>
+                        <p>SãoPaulo - SP</p>
+                    </div>
+                    <div class="lojas-dados">
+                        <a href="maito:rj@bikcraft.com">sp@bikcraft.com</a>
+                        <a href="tel:+5511999999999">+55 11 99999-9999</a>
+                    </div>
+                    <p class="lojas-tempo"><img src="./img/icones/horario.svg">08-18h de seg à dom</p>
+                </div>
+            </div>
+        </div>
+    </article>
 
     <footer class="footer-bg">
         <div class="footer container">
@@ -100,8 +138,8 @@
                 <ul>
                     <li><a href="tel:+5511999999999">+55 11 99999-9999</a></li>
                     <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
-                    <li>Rua Ali na Esquina, 42 - SBC</li>
-                    <li>São Paulo - SP</li>
+                    <li>Rua Ali na Esquina, 42</li>
+                    <li>Rio de Janeiro - RJ</li>
                 </ul>
                 <div class="footer-redes">
                     <a href="./"><img src="./img/redes/instagram.svg" alt="Instagram"></a>
