@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Slab:wght@400;500&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Slab:wght@400;500&display=swap"
         rel="stylesheet">
 
 </head>
@@ -47,11 +48,83 @@
             <div class="orcamento-produto">
                 <h2>Bikcraft ou Seguro?</h2>
 
-                <input type="radio" name="tipo1" value="bikcraft" id="bikcraft">
+                <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
                 <label for="bikcraft">Bikcraft</label>
 
                 <input type="radio" name="tipo" value="seguro" id="seguro">
                 <label for="seguro">Seguro</label>
+
+                <div class="orcamento-conteudo" id="orcamento-bikcraft">
+                    <h2>Escolha a sua (BIKCRAFT)</h2>
+                    <p>Esse é um conteúdo teste</p>
+                </div>
+
+                <div class="orcamento-conteudo" id="orcamento-seguro">
+                    <h2>Escolha o plano</h2>
+                    <p>Esse é um conteúdo teste</p>
+                </div>
+            </div>
+
+            <div class="orcamento-dados form">
+                <h2 class="col-2">dados pessoais</h2>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <div>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+
+                <div class="col-2">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+                </div>
+
+                <div class="col-2">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <h2 class="col-2">dados pessoais</h2>
+
+                <div>
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep">
+                </div>
+
+                <div>
+                    <label for="numero">Número</label>
+                    <input type="text" name="numero" id="numero">
+                </div>
+
+                <div>
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" name="logradouro" id="logradouro" placeholder="Rua, avenida...">
+                </div>
+
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro">
+                </div>
+
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade">
+                </div>
+
+                <div>
+                    <label for="estado">Estado</label>
+                    <input type="text" name="estado" id="estado">
+                </div>
+
+                <div>
+                    <label for="termos">Li e aceito os <u>termos e condições</u></label>
+                    <input type="checkbox" name="estado" id="estado">
+                </div>
+
+                <button class="botao col-2">Solicitar orçamento</button>
             </div>
         </form>
 
