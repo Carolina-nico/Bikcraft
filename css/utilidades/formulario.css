@@ -34,6 +34,13 @@
     box-shadow: 0 0 0 2px #fea;
 }
 
+@media (max-width: 1200px){
+
+    .contato {
+        margin: 0px 10px;
+    }
+}
+
 @media (max-width: 500px) {
 
     .form {
@@ -42,5 +49,12 @@
 
     .form .col-2 {
         grid-column: 1;
+    }
+}
+
+@media (max-width: 600px){
+
+    .contato {
+        margin: 0px;
     }
 }

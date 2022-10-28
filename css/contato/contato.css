@@ -106,8 +106,7 @@
 
 /* ENDEREÇO */
 
-.lojas-dados a,
-p {
+.lojas-dados a, .lojas-dados p{
     font: var(--font-2-s);
     color: var(--cor-8);
     font-weight: 500;
@@ -139,11 +138,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px 16px;
-    margin-left: 60px;
-}
-
-.lojas-conteudo h3 {
-    padding-top: 32px;
+    padding: 32px;
 }
 
 .lojas-conteudo h3,
@@ -158,9 +153,8 @@ p {
     font: var(--font-1-s);
     font-weight: 600;
     display: flex;
+    align-items: center;
     gap: 8px;
-    margin-left: -28px;
-    padding-bottom: 32px;
 }
 
 .lojas-dados {
@@ -168,4 +162,57 @@ p {
     gap: 8px;
     border-left: 2px solid var(--cor-2);
     padding-left: 12px;
+}
+
+@media (max-width: 1200px) {
+
+    .lojas {
+        margin: 0px 40px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .lojas {
+        padding: 60px 0 60px;
+    }
+
+    .lojas-conteudo {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .lojas {
+        margin: 0px 20px;
+        padding: 60px 0 40px;
+
+    }
+
+    .lojas h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .lojas {
+        grid-template-columns: 1fr;
+    }
+
+    .lojas-item {
+        margin-bottom: 20px;
+    }
+
+    .lojas-conteudo h3 {
+        font-size: 20px;
+    }
+
+    .lojas-dados a,
+    p {
+        font-size: 14px;
+    }
+
+    .lojas-tempo {
+        font-size: .80rem;
+    }
 }
