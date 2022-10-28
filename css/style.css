@@ -32,6 +32,9 @@
 /* Termos */
 @import url(./termos/termos.css);
 
+/* Orçamento */
+@import url(./orcamento/orcamento.css);
+
 /* Seguros */
 @import url(./seguros/seguros.css);
 @import url(./seguros/vantagens.css);

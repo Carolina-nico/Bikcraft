@@ -1,0 +1,11 @@
+#orcamento {
+    background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
+}
+
+.orcamento-produto h2 {
+    font: var(--font-1-xs);
+    color: var(--cor-5);
+}
+
+
+
