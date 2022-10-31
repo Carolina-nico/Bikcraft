@@ -43,12 +43,68 @@ u {
 .orcamento-produto {
     background: var(--cor-12);
     border-radius: 5px 0 0 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    gap: 20px;
 }
 
-.orcamento-conteudo h2,
-.orcamento-conteudo p {
-    font: var(--font-1-m);
-    color: var(--cor-0);
+.orcamento-produto label {
+    color: var(--cor-4);
+    font: 500 1rem/1.5 "Poppins", sans-serif;
+    background-color: var(--cor-10);
+    padding: 12px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+/* CHECKED */
+
+.orcamento-produto input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    /* ^^ Retira o efeito de clique do botão */
+}
+
+.orcamento-produto label::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    border: 1px solid var(--cor-6);
+    border-radius: 50%;
+    margin-right: 8px;
+} 
+
+.orcamento-produto input:checked + label::before {
+    border-color: var(--cor-7);
+    box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 6px var(--cor-7);
+}
+
+.orcamento-produto label span {
+    display: none;
+}
+
+.orcamento-produto input:checked + label span {
+    display: inline-block;
+}
+
+.orcamento-produto input:checked + label {
+    background: var(--cor-0);
+    color: var(--cor-11);
+}
+
+.orcamento-produto > * {
+    grid-column: 1/-1;
+}
+
+.orcamento-produto > label {
+    grid-column: initial;
 }
 
 .orcamento-dados {
@@ -61,19 +117,16 @@ u {
     color: var(--cor-9);
 }
 
-.orcamento-produto label {
-    background: #ccc;
-    padding: 20px;
-    display: inline-block;
+/* .orcamento-conteudo {
+    display: none;
+} */
+
+.orcamento-conteudo h2,
+.orcamento-dados h2:nth-of-type(n + 2) {
+    margin-top: 20px;
 }
 
-.orcamento-conteudo {
-    padding: 20px;
-    background: #222;
-    margin: 20px 0;
-    display: none;
-}
-/* Checked funciona de certo modo: quando o input estiver checado (ativo), procurar o primeiro elemento com id orcamento-bikcraft. E a duas formas de serem efetuadas com acento tio ou as tags.
+/* Checked funciona de certo modo: quando o input estiver checado (ativo), procurar o primeiro elemento com id orcamento-bikcraft. E a duas formas de serem efetuadas: com acento tio ou as tags abaixo.
 
 input#bikcraft:checked + label + input + label + #orcamento-bikcraft {
     background: blue;
@@ -81,9 +134,11 @@ input#bikcraft:checked + label + input + label + #orcamento-bikcraft {
 
 input#bikcraft:checked ~ #orcamento-bikcraft,
 input#seguro:checked ~ #orcamento-seguro {
-    display: block;
+    display: grid;
+    gap: 20px;
 }
 
 #orcamento-bikcraft {
     display: none;
 }
+
