@@ -214,7 +214,7 @@ input#seguro:checked~#orcamento-seguro {
     display: grid;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px){
 
     .orcamento {
         margin: 0px 20px;
@@ -224,6 +224,7 @@ input#seguro:checked~#orcamento-seguro {
     .orcamento-dados {
         padding: 32px;
     }
+}
 
     @media (max-width: 900px) {
 
