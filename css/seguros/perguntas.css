@@ -64,13 +64,15 @@ button {
     transition: .3s;
 }
 
-.details button:hover::after {
+.details button:hover::after,
+.perguntas button[aria-expanded="true"]::after /*esse atributo com o valor 'true' selecionado, faz a seta ficar para baixo*/ {
     transform: rotate(180deg);
 }
 
 .perguntas dd {
     display: none;
 }
+
 .perguntas dd.ativa {
     display: block;
 }
