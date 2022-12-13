@@ -38,7 +38,8 @@
     position: absolute;
 }
 
-.header-menu a:hover:after {
+.header-menu a:hover:after,
+.header-menu a.ativo:after /* Essa class ativo, esta posicionado no javaScript*/ {
     width: 100%;
 }
 

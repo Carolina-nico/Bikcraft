@@ -3,32 +3,33 @@
     padding-bottom: 120px;
 }
 
-.details {
-    padding-top: 88px;
+.perguntas h2 {
+    margin-bottom: 60px;
 }
 
-details {
+.perguntas dl > div {
     padding: 20px;
+    border-radius: 4px;
 }
 
-details summary {
+button {
     font: var(--font-1-m-b);
     color: var(--cor-11);
 }
 
-details p {
+.details dd {
     font: var(--font-2-s);
     color: var(--cor-9);
     padding-top: 16px;
     padding-left: 20px;
-    max-width: 90ch;
+    max-width: 95ch;
 }
 
-:is(.details details, .details p):nth-child(odd) {
+:is(.details div, .details dd):nth-child(odd) {
     background: var(--cor-1);
 }
 
-summary {
+.details button {
     display: grid;
     list-style: none;
     grid-template-columns: auto 1fr auto;
@@ -37,10 +38,12 @@ summary {
     gap: 8px;
     cursor: pointer;
     margin-left: 20px;
-    /* margin-left: 20px; */
+    border: none;
+    background: none;
+    width: 100%;
 }
 
-summary::before {
+.details button::before {
     content: '';
     position: absolute;
     display: inline-block;
@@ -50,7 +53,7 @@ summary::before {
     height: 8px;
 }
 
-summary::after {
+.details button::after {
     content: '';
     position: absolute;
     display: inline-block;
@@ -61,17 +64,24 @@ summary::after {
     transition: .3s;
 }
 
-summary:hover::after {
+.details button:hover::after {
     transform: rotate(180deg);
 }
 
-summary::marker {
+.perguntas dd {
+    display: none;
+}
+.perguntas dd.ativa {
+    display: block;
+}
+
+.details button::marker {
     color: transparent !important;
 }
 
 
 @media (max-width: 1200px) {
-    summary::after {
+    .details dt::after {
         display: none;
     }
 }
@@ -84,7 +94,7 @@ summary::marker {
     }
 
     .perguntas h2,
-    details {
+    .details div {
         margin: 20px;
     }
 

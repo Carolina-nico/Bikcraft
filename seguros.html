@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Seguros | Bikcraft</title>
     <meta name="description" content="Nossos seguros.">
@@ -54,7 +54,7 @@
                     <li>Suporte 08h às 18h</li>
                     <li>Cobertura estaadual</li>
                 </ul>
-                <a class="botao secundario" href="./orcamento.html">inscreva-se</a>
+                <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">inscreva-se</a>
             </div>
 
             <div class="seguros-item">
@@ -68,7 +68,7 @@
                     <li>Desconto em parceiros</li>
                     <li>Acesso ao Clube Bikcraft</li>
                 </ul>
-                <a class="botao" href="./orcamento">inscreva-se</a>
+                <a class="botao" href="./orcamento.html?tipo=seguro&produto=ouro">inscreva-se</a>
             </div>
         </div>
     </main>
@@ -121,51 +121,49 @@
 
     <article class="perguntas container">
         <h2>perguntas frequentes<span class="ponto-span">.</span></h2>
-        <div class="details">
-            <details>
-                <summary>Qual forma de pagamento vocês aceitam?</summary>
-                <p>Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para
-                    pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
-            </details>
-            <details>
-                <summary>Como posso entrar em contato?</summary>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non porro nam quis aspernatur ex laborum
+        <dl class="details">
+            <div>
+                <dt><button>Qual forma de pagamento vocês aceitam?</button></dt>
+                <dd>Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para
+                    pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+            </div>
+            <div>
+                <dt><button>Como posso entrar em contato?</button></dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non porro nam quis aspernatur ex laborum
                     quibusdam excepturi suscipit, neque temporibus quisquam delectus enim, numquam repellendus, sequi
-                    odio rerum nisi iusto.</p>
-            </details>
-            <details>
-                <summary>Vocês possuem algum desconto?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis numquam dicta tempore earum
+                    odio rerum nisi iusto.</dd>
+            </div>
+            <div>
+                <dt><button>Vocês possuem algum desconto?</button></dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis numquam dicta tempore earum
                     praesentium, ab nam ipsum possimus neque placeat dolorum illo necessitatibus? Corporis in neque
-                    labore, eveniet quo alias?</p>
-            </details>
-            <details>
-                <summary>Qual a garantia que possuo?</summary>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non porro nam quis aspernatur ex laborum
+                    labore, eveniet quo alias?</dd>
+            </div>
+            <div>
+                <dt><button>Qual a garantia que possuo?</button></dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non porro nam quis aspernatur ex laborum
                     quibusdam excepturi suscipit, neque temporibus quisquam delectus enim, numquam repellendus, sequi
-                    odio rerum nisi iusto.</p>
-            </details>
-            <details>
-                <summary>Posso parcelar no boleto?</summary>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non porro nam quis aspernatur ex laborum
+                    odio rerum nisi iusto.</dd>
+            </div>
+            <div>
+                <dt><button>Posso parcelar no boleto?</button></dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non porro nam quis aspernatur ex laborum
                     quibusdam excepturi suscipit, neque temporibus quisquam delectus enim, numquam repellendus, sequi
-                    odio rerum nisi iusto.</p>
-            </details>
-            <details>
-                <summary>Quantas trocas posso fazer ao ano?</summary>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non porro nam quis aspernatur ex laborum
+                    odio rerum nisi iusto.</dd>
+            </div>
+            <div>
+                <dt><button>Quantas trocas posso fazer ao ano?</button></dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non porro nam quis aspernatur ex laborum
                     quibusdam excepturi suscipit, neque temporibus quisquam delectus enim, numquam repellendus, sequi
-                    odio rerum nisi iusto.</p>
-            </details>
-            <details>
-                <summary>Qual Bikcraft devo escolher para o meu tamanho?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita totam quos sapiente corporis
+                    odio rerum nisi iusto.</dd>
+            </div>
+            <div>
+                <dt></button>Qual Bikcraft devo escolher para o meu tamanho?</button></dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita totam quos sapiente corporis
                     consequatur aperiam, voluptatum nulla corrupti, necessitatibus voluptas deserunt placeat officiis
-                    ipsum nobis molestias eligendi, explicabo sint libero?</p>
-            </details>
-
-
-        </div>
+                    ipsum nobis molestias eligendi, explicabo sint libero?</dd>
+            </div>
+        </dl>
     </article>
 
     <footer class="footer-bg">
@@ -202,6 +200,7 @@
         </div>
     </footer>
 
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
