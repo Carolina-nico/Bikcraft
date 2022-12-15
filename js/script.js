@@ -55,7 +55,10 @@ const galeriaContainer = document.querySelector(".bicicleta-img");
 
 function trocarImagem(event) {
     const img = event.currentTarget;
-    galeriaContainer.prepend(img); //Prepend: funciona da seguinte forma, tenho uma img grande e duas pequenas. Seleciono a pequena e ela vai mudar de lugar e ir para a grande e vise versa.
+    const media = matchMedia("(min-width: 1000px)").matches; //matchMedia: funciona da mesma forma que o mediaQuery.
+    if (media) {
+        galeriaContainer.prepend(img); //Prepend: funciona da seguinte forma, tenho uma img grande e duas pequenas. Seleciono a pequena e ela vai mudar de lugar e ir para a grande e vise versa.
+    };
     console.log(img);
 }
 
@@ -64,3 +67,8 @@ function eventosGaleria(img) {
 }
 
 galeria.forEach(eventosGaleria);
+
+// Animação
+if (window.SimpleAnime){
+    new SimpleAnime();
+}
